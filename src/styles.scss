@@ -1,0 +1,489 @@
+// Biến màu
+$primary: #667eea;
+$primary-dark: #5568d3;
+$secondary: #e2e8f0;
+$success: #48bb78;
+$success-dark: #38a169;
+$warning: #ed8936;
+$warning-dark: #dd6b20;
+$danger: #f56565;
+$danger-dark: #e53e3e;
+$text-dark: #2d3748;
+$text-gray: #4a5568;
+$text-light-gray: #718096;
+$hint-bg: #fffaf0;
+$hint-border: #ed8936;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+// Container chính
+.quiz-manager,
+.quiz-mode {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, $primary 0%, #764ba2 100%);
+}
+
+// Header
+.header,
+.quiz-header {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .header-content,
+  .quiz-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1,
+    h2 {
+      margin: 0;
+      color: $text-dark;
+      font-size: 1.8rem;
+    }
+
+    .btn-exit {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: $danger;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 500;
+
+      &:hover {
+        background: $danger-dark;
+      }
+    }
+  }
+}
+
+// Progress bar
+.progress-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  .progress-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: $secondary;
+    color: $text-gray;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      background: lighten($secondary, 10%);
+    }
+
+    &.active {
+      background: $primary;
+      color: white;
+    }
+    &.answered {
+      background: lighten($primary, 20%);
+      color: white;
+    }
+    &.correct {
+      background: $success;
+      color: white;
+    }
+    &.incorrect {
+      background: $danger;
+      color: white;
+    }
+  }
+}
+
+// Banner kết quả & quiz content
+.results-banner,
+.quiz-content,
+.chapter-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+
+
+// Question box & card
+.question-box,
+.question-card,
+.question-form {
+  margin-bottom: 2rem;
+
+  .question-title {
+    font-size: 1.2rem;
+    color: $text-dark;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .hint-section {
+    margin-bottom: 1.5rem;
+
+    .btn-hint {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: lighten($secondary, 10%);
+      color: $text-gray;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+
+      &:hover {
+        background: $secondary;
+      }
+    }
+
+    .hint-content {
+      padding: 1rem;
+      background: $hint-bg;
+      border-left: 4px solid $hint-border;
+      border-radius: 6px;
+      color: darken($hint-bg, 50%);
+      line-height: 1.6;
+    }
+  }
+}
+
+.question-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+// Answers
+.answers-grid,
+.answers-display,
+.answers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.answers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.answer-label {
+  font-weight: 600;
+  color: #4a5568;
+  min-width: 25px;
+}
+
+.answer-input {
+  flex: 1;
+  max-width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+
+  resize: vertical; /* cho phép kéo dài theo chiều dọc */
+  min-height: 40px; /* chiều cao tối thiểu */
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.answer-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.answer-box,
+.answer-option,
+.answer-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: #f7fafc;
+  border: 2px solid $secondary;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover:not(.disabled) {
+    border-color: $primary;
+    background: lighten($primary, 50%);
+  }
+
+  &.selected {
+    border-color: $primary;
+    background: lighten($primary, 50%);
+  }
+  &.correct-answer,
+  &.correct {
+    border-color: $success;
+    background: lighten($success, 50%);
+  }
+  &.wrong-answer,
+  &.incorrect {
+    border-color: $danger;
+    background: lighten($danger, 50%);
+  }
+
+  .answer-id {
+    min-width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $primary;
+    color: white;
+    border-radius: 50%;
+    font-weight: 600;
+
+    .correct-answer & {
+      background: $success;
+    }
+    .wrong-answer & {
+      background: $danger;
+    }
+  }
+
+  .answer-text {
+    flex: 1;
+    color: $text-dark;
+    line-height: 1.5;
+
+    display: block;
+    width: 100%;
+    word-break: break-word;
+  }
+  .answer-icon {
+    color: currentColor;
+  }
+}
+
+// Navigation & buttons
+.quiz-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  .btn-nav,
+  .btn-submit,
+  .btn-primary,
+  .btn-secondary,
+  .btn-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .btn-nav {
+    flex: 1;
+    background: $secondary;
+    color: $text-gray;
+    &:hover:not(:disabled) {
+      background: lighten($secondary, 10%);
+    }
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+  .btn-submit {
+    flex: 1;
+    background: $success;
+    color: white;
+    &:hover {
+      background: $success-dark;
+    }
+  }
+  .btn-primary {
+    background: $primary;
+    color: white;
+    &:hover {
+      background: $primary-dark;
+    }
+  }
+  .btn-secondary {
+    background: $secondary;
+    color: $text-gray;
+    &:hover {
+      background: lighten($secondary, 10%);
+    }
+  }
+  .btn-icon {
+    padding: 0.5rem;
+    min-width: 36px;
+    justify-content: center;
+  }
+  .btn-quiz {
+    background: #9f7aea;
+    color: white;
+    &:hover {
+      background: #805ad5;
+    }
+  }
+  .btn-success {
+    background: $success;
+    color: white;
+    &:hover {
+      background: $success-dark;
+    }
+  }
+  .btn-warning {
+    background: $warning;
+    color: white;
+    &:hover {
+      background: $warning-dark;
+    }
+  }
+  .btn-danger {
+    background: $danger;
+    color: white;
+    &:hover {
+      background: $danger-dark;
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 1024px) {
+  .quiz-navigation {
+    flex-direction: column;
+  }
+  .progress-bar {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .quiz-manager,
+  .quiz-mode {
+    padding: 1rem;
+  }
+  .header h1,
+  .quiz-title h2 {
+    font-size: 1.3rem;
+  }
+  .chapter-name-input {
+    font-size: 1rem;
+  }
+  .answer-item {
+    flex-wrap: wrap;
+  }
+  .answers-grid {
+    gap: 0.75rem;
+  }
+  .question-title {
+    font-size: 1rem;
+  }
+  .quiz-navigation .btn-nav,
+  .quiz-navigation .btn-submit {
+    flex: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .quiz-header,
+  .header {
+    padding: 1rem;
+  }
+  .answers-grid .answer-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.75rem;
+  }
+  .answer-id {
+    margin-bottom: 0.25rem;
+  }
+  .btn-exit {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+// MOIiiiiiiiiiiii
+@media (max-width: 768px) {
+  .header-content {
+    h1 {
+      text-align: center;
+    }
+
+    gap: 1em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .chapter-header {
+    flex-direction: column;
+    align-items: center;
+
+    .chapter-title-section {
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .chapter-actions {
+      width: 100%;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+  }
+
+  input {
+    text-align: center;
+  }
+
+  //   .question-header {
+  //     gap: 0;
+  //   }
+
+  .question-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .question-hint {
+    white-space: normal; /* cho phép xuống dòng bình thường */
+  }
+
+  .answers-display {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
