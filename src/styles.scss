@@ -126,8 +126,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-
-
 // Question box & card
 .question-box,
 .question-card,
@@ -332,6 +330,19 @@ body {
   .btn-primary {
     background: $primary;
     color: white;
+
+    display: inline-flex; /* hoặc flex nếu muốn chiếm 100% width */
+    align-items: center; /* căn giữa theo chiều dọc */
+    justify-content: center; /* căn giữa theo chiều ngang */
+    gap: 8px; /* khoảng cách giữa icon và chữ */
+    padding: 8px 16px; /* padding cho button */
+    background-color: #007bff; /* màu nền button */
+    color: white; /* màu chữ */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+
     &:hover {
       background: $primary-dark;
     }

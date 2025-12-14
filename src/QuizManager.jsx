@@ -1197,13 +1197,700 @@ const QuizManager = () => {
           {
             id: 5,
             name: "Chương 5: Vitamin",
-            questions: [],
+            questions: [
+              {
+                id: 1,
+                question: "Vitamin là gì?",
+                hint: "Vitamin cần với lượng rất nhỏ nhưng không thể thiếu cho sự sống",
+                answers: [
+                  {
+                    id: "A",
+                    text: "Nhóm chất vô cơ cung cấp năng lượng cho cơ thể",
+                    isCorrect: false,
+                  },
+                  {
+                    id: "B",
+                    text: "Nhóm chất hữu cơ, phân tử nhỏ, cần thiết cho sự sống",
+                    isCorrect: true,
+                  },
+                  {
+                    id: "C",
+                    text: "Nhóm protein xúc tác phản ứng sinh học",
+                    isCorrect: false,
+                  },
+                  {
+                    id: "D",
+                    text: "Nhóm lipid dự trữ năng lượng",
+                    isCorrect: false,
+                  },
+                ],
+              },
+              {
+                id: 2,
+                question:
+                  "Vitamin trong cơ thể người chủ yếu được cung cấp từ đâu?",
+                hint: "Con người không tự tổng hợp được đa số vitamin",
+                answers: [
+                  {
+                    id: "A",
+                    text: "Tổng hợp hoàn toàn trong cơ thể",
+                    isCorrect: false,
+                  },
+                  { id: "B", text: "Từ thức ăn hằng ngày", isCorrect: true },
+                  { id: "C", text: "Từ không khí", isCorrect: false },
+                  { id: "D", text: "Từ nước uống", isCorrect: false },
+                ],
+              },
+              {
+                id: 3,
+                question:
+                  "Vitamin được phân loại chủ yếu dựa trên tiêu chí nào?",
+                hint: "Liên quan đến khả năng hòa tan",
+                answers: [
+                  { id: "A", text: "Khối lượng phân tử", isCorrect: false },
+                  { id: "B", text: "Màu sắc", isCorrect: false },
+                  {
+                    id: "C",
+                    text: "Tính hòa tan trong nước hay chất béo",
+                    isCorrect: true,
+                  },
+                  {
+                    id: "D",
+                    text: "Nguồn gốc động vật hay thực vật",
+                    isCorrect: false,
+                  },
+                ],
+              },
+              {
+                id: 4,
+                question:
+                  "Nhóm vitamin tan trong chất béo gồm những vitamin nào?",
+                hint: "Có 4 vitamin tan trong chất béo",
+                answers: [
+                  { id: "A", text: "A, B, C, D", isCorrect: false },
+                  { id: "B", text: "A, D, E, K", isCorrect: true },
+                  { id: "C", text: "B, C, E, K", isCorrect: false },
+                  { id: "D", text: "A, B, D, C", isCorrect: false },
+                ],
+              },
+              {
+                id: 5,
+                question: "Vitamin tan trong nước bao gồm nhóm nào sau đây?",
+                hint: "Chủ yếu là nhóm B",
+                answers: [
+                  { id: "A", text: "A, D, E", isCorrect: false },
+                  {
+                    id: "B",
+                    text: "B, C, biotin, acid folic",
+                    isCorrect: true,
+                  },
+                  { id: "C", text: "A, B, C", isCorrect: false },
+                  { id: "D", text: "D, E, K", isCorrect: false },
+                ],
+              },
+              {
+                id: 6,
+                question:
+                  "Thiếu vitamin trong thời gian dài có thể gây ra hậu quả nào?",
+                hint: "Thiếu vitamin gây bệnh lý",
+                answers: [
+                  { id: "A", text: "Tăng cân nhanh", isCorrect: false },
+                  {
+                    id: "B",
+                    text: "Rối loạn sinh lý và bệnh tật",
+                    isCorrect: true,
+                  },
+                  {
+                    id: "C",
+                    text: "Tăng năng lượng tế bào",
+                    isCorrect: false,
+                  },
+                  {
+                    id: "D",
+                    text: "Tăng miễn dịch tuyệt đối",
+                    isCorrect: false,
+                  },
+                ],
+              },
+              {
+                id: 7,
+                question:
+                  "Phần lớn vitamin tham gia cấu tạo enzyme dưới dạng nào?",
+                hint: "Vitamin kết hợp với protein enzyme",
+                answers: [
+                  { id: "A", text: "Protein cấu trúc", isCorrect: false },
+                  { id: "B", text: "Chất nền", isCorrect: false },
+                  {
+                    id: "C",
+                    text: "Coenzyme hoặc nhóm ngoại",
+                    isCorrect: true,
+                  },
+                  { id: "D", text: "Chất ức chế enzyme", isCorrect: false },
+                ],
+              },
+              {
+                id: 8,
+                question: "Vitamin B1 là coenzyme của enzyme nào?",
+                hint: "Liên quan đến khử carboxyl",
+                answers: [
+                  { id: "A", text: "Oxidase", isCorrect: false },
+                  { id: "B", text: "Decarboxylase", isCorrect: true },
+                  { id: "C", text: "Hydrolase", isCorrect: false },
+                  { id: "D", text: "Isomerase", isCorrect: false },
+                ],
+              },
+              {
+                id: 9,
+                question: "Thiếu vitamin B1 gây bệnh nào?",
+                hint: "Bệnh liên quan đến thần kinh và phù",
+                answers: [
+                  { id: "A", text: "Scorbut", isCorrect: false },
+                  { id: "B", text: "Beri-beri", isCorrect: true },
+                  { id: "C", text: "Còi xương", isCorrect: false },
+                  { id: "D", text: "Thiếu máu ác tính", isCorrect: false },
+                ],
+              },
+              {
+                id: 10,
+                question: "Vitamin A có vai trò chính nào sau đây?",
+                hint: "Liên quan đến thị giác",
+                answers: [
+                  { id: "A", text: "Đông máu", isCorrect: false },
+                  {
+                    id: "B",
+                    text: "Giúp sáng mắt, ngăn ngừa quáng gà",
+                    isCorrect: true,
+                  },
+                  { id: "C", text: "Tạo hồng cầu", isCorrect: false },
+                  { id: "D", text: "Chống loãng xương", isCorrect: false },
+                ],
+              },
+              {
+                id: 11,
+                question:
+                  "Tiền vitamin A phổ biến nhất trong thực vật là chất nào?",
+                hint: "Có nhiều trong cà rốt",
+                answers: [
+                  { id: "A", text: "Retinol", isCorrect: false },
+                  { id: "B", text: "β-caroten", isCorrect: true },
+                  { id: "C", text: "Ergocalciferol", isCorrect: false },
+                  { id: "D", text: "Tocopherol", isCorrect: false },
+                ],
+              },
+              {
+                id: 12,
+                question: "Vitamin D còn được gọi là vitamin gì?",
+                hint: "Liên quan đến ánh nắng mặt trời",
+                answers: [
+                  { id: "A", text: "Vitamin xương", isCorrect: false },
+                  { id: "B", text: "Vitamin ánh nắng", isCorrect: true },
+                  { id: "C", text: "Vitamin miễn dịch", isCorrect: false },
+                  { id: "D", text: "Vitamin sinh sản", isCorrect: false },
+                ],
+              },
+              {
+                id: 13,
+                question:
+                  "Vitamin D được tổng hợp ở da dưới tác dụng của yếu tố nào?",
+                hint: "Liên quan đến tia tử ngoại",
+                answers: [
+                  { id: "A", text: "Ánh sáng hồng ngoại", isCorrect: false },
+                  { id: "B", text: "Tia UVB (280–310 nm)", isCorrect: true },
+                  { id: "C", text: "Ánh sáng nhìn thấy", isCorrect: false },
+                  { id: "D", text: "Nhiệt độ cao", isCorrect: false },
+                ],
+              },
+              {
+                id: 14,
+                question: "Vitamin E có vai trò nổi bật nào?",
+                hint: "Liên quan đến chống oxy hóa",
+                answers: [
+                  { id: "A", text: "Tạo năng lượng", isCorrect: false },
+                  {
+                    id: "B",
+                    text: "Chống oxy hóa, bảo vệ màng tế bào",
+                    isCorrect: true,
+                  },
+                  { id: "C", text: "Đông máu", isCorrect: false },
+                  { id: "D", text: "Hấp thu canxi", isCorrect: false },
+                ],
+              },
+              {
+                id: 15,
+                question: "Vitamin K có vai trò chính trong quá trình nào?",
+                hint: "Liên quan đến prothrombin",
+                answers: [
+                  { id: "A", text: "Hô hấp tế bào", isCorrect: false },
+                  { id: "B", text: "Đông máu", isCorrect: true },
+                  { id: "C", text: "Tiêu hóa lipid", isCorrect: false },
+                  { id: "D", text: "Dẫn truyền thần kinh", isCorrect: false },
+                ],
+              },
+              {
+                id: 16,
+                question: "Vitamin B2 tham gia vào quá trình nào?",
+                hint: "Liên quan đến phản ứng oxy hóa – khử",
+                answers: [
+                  { id: "A", text: "Tổng hợp lipid", isCorrect: false },
+                  {
+                    id: "B",
+                    text: "Oxy hóa – khử tạo năng lượng",
+                    isCorrect: true,
+                  },
+                  { id: "C", text: "Đông máu", isCorrect: false },
+                  { id: "D", text: "Hấp thu canxi", isCorrect: false },
+                ],
+              },
+              {
+                id: 17,
+                question:
+                  "Vitamin B6 có vai trò quan trọng trong chuyển hóa chất nào?",
+                hint: "Liên quan đến acid amin",
+                answers: [
+                  { id: "A", text: "Lipid", isCorrect: false },
+                  { id: "B", text: "Acid amin", isCorrect: true },
+                  { id: "C", text: "Glucid", isCorrect: false },
+                  { id: "D", text: "Khoáng", isCorrect: false },
+                ],
+              },
+              {
+                id: 18,
+                question:
+                  "Vitamin B12 có vai trò đặc biệt trong quá trình nào?",
+                hint: "Liên quan đến DNA và tạo máu",
+                answers: [
+                  { id: "A", text: "Tổng hợp lipid", isCorrect: false },
+                  {
+                    id: "B",
+                    text: "Tổng hợp DNA và tạo máu",
+                    isCorrect: true,
+                  },
+                  { id: "C", text: "Hấp thu canxi", isCorrect: false },
+                  { id: "D", text: "Chống oxy hóa", isCorrect: false },
+                ],
+              },
+              {
+                id: 19,
+                question: "Thiếu vitamin B12 gây ra bệnh nào?",
+                hint: "Liên quan đến thiếu máu",
+                answers: [
+                  { id: "A", text: "Còi xương", isCorrect: false },
+                  { id: "B", text: "Thiếu máu ác tính", isCorrect: true },
+                  { id: "C", text: "Scorbut", isCorrect: false },
+                  { id: "D", text: "Beri-beri", isCorrect: false },
+                ],
+              },
+              {
+                id: 20,
+                question: "Vitamin C còn được gọi là gì?",
+                hint: "Tên hóa học phổ biến",
+                answers: [
+                  { id: "A", text: "Retinoic acid", isCorrect: false },
+                  { id: "B", text: "Ascorbic acid", isCorrect: true },
+                  { id: "C", text: "Tocopherol", isCorrect: false },
+                  { id: "D", text: "Cholecalciferol", isCorrect: false },
+                ],
+              },
+              {
+                id: 21,
+                question: "Vai trò quan trọng của vitamin C là gì?",
+                hint: "Liên quan đến miễn dịch",
+                answers: [
+                  {
+                    id: "A",
+                    text: "Tạo năng lượng trực tiếp",
+                    isCorrect: false,
+                  },
+                  {
+                    id: "B",
+                    text: "Tăng sức đề kháng, chống nhiễm trùng",
+                    isCorrect: true,
+                  },
+                  { id: "C", text: "Đông máu", isCorrect: false },
+                  { id: "D", text: "Tạo hormon steroid", isCorrect: false },
+                ],
+              },
+              {
+                id: 22,
+                question: "Thiếu vitamin C gây bệnh gì?",
+                hint: "Bệnh gây chảy máu lợi",
+                answers: [
+                  { id: "A", text: "Beri-beri", isCorrect: false },
+                  { id: "B", text: "Scorbut", isCorrect: true },
+                  { id: "C", text: "Còi xương", isCorrect: false },
+                  { id: "D", text: "Thiếu máu", isCorrect: false },
+                ],
+              },
+              {
+                id: 23,
+                question: "Vitamin C kém bền trong điều kiện nào?",
+                hint: "Liên quan đến môi trường kiềm và oxy",
+                answers: [
+                  { id: "A", text: "Môi trường acid", isCorrect: false },
+                  {
+                    id: "B",
+                    text: "Môi trường kiềm và ánh sáng",
+                    isCorrect: true,
+                  },
+                  { id: "C", text: "Nhiệt độ thấp", isCorrect: false },
+                  { id: "D", text: "Bóng tối", isCorrect: false },
+                ],
+              },
+              {
+                id: 24,
+                question:
+                  "Yếu tố nào ảnh hưởng nhiều đến sự hấp thu vitamin tan trong chất béo?",
+                hint: "Liên quan đến lipid",
+                answers: [
+                  { id: "A", text: "Nước", isCorrect: false },
+                  {
+                    id: "B",
+                    text: "Lipid trong khẩu phần ăn",
+                    isCorrect: true,
+                  },
+                  { id: "C", text: "Chất xơ", isCorrect: false },
+                  { id: "D", text: "Protein", isCorrect: false },
+                ],
+              },
+              {
+                id: 25,
+                question:
+                  "Nguyên nhân làm hao hụt vitamin trong thực phẩm là gì?",
+                hint: "Liên quan đến chế biến và bảo quản",
+                answers: [
+                  {
+                    id: "A",
+                    text: "Ánh sáng, oxy, nhiệt độ cao",
+                    isCorrect: true,
+                  },
+                  { id: "B", text: "Bảo quản lạnh", isCorrect: false },
+                  { id: "C", text: "Đóng gói kín", isCorrect: false },
+                  { id: "D", text: "Ăn tươi", isCorrect: false },
+                ],
+              },
+            ],
           },
 
+          // CHƯƠNG 6
           {
             id: 6,
             name: "Chương 6: Chất Khoáng",
-            questions: [],
+            questions: [
+              {
+                id: 1,
+                question: "Chất khoáng trong thực phẩm là gì?",
+                hint: "Là phần còn lại sau khi đốt cháy mô sinh học",
+                answers: [
+                  {
+                    id: "A",
+                    text: "Các hợp chất hữu cơ dễ bay hơi",
+                    isCorrect: false,
+                  },
+                  {
+                    id: "B",
+                    text: "Các nguyên tố hóa học tồn tại trong tro (ash)",
+                    isCorrect: true,
+                  },
+                  {
+                    id: "C",
+                    text: "Các enzyme xúc tác sinh học",
+                    isCorrect: false,
+                  },
+                  {
+                    id: "D",
+                    text: "Các vitamin tan trong nước",
+                    isCorrect: false,
+                  },
+                ],
+              },
+              {
+                id: 2,
+                question:
+                  "Khoảng bao nhiêu nguyên tố khoáng được tìm thấy trong cơ thể người?",
+                hint: "Con số khá lớn trong bảng tuần hoàn",
+                answers: [
+                  { id: "A", text: "Khoảng 20 nguyên tố", isCorrect: false },
+                  { id: "B", text: "Khoảng 40 nguyên tố", isCorrect: false },
+                  { id: "C", text: "Khoảng 78 nguyên tố", isCorrect: true },
+                  { id: "D", text: "Hơn 150 nguyên tố", isCorrect: false },
+                ],
+              },
+              {
+                id: 3,
+                question: "Thiếu chất khoáng nào sau đây có thể gây thiếu máu?",
+                hint: "Liên quan đến tạo máu",
+                answers: [
+                  { id: "A", text: "Calcium", isCorrect: false },
+                  { id: "B", text: "Iron và Copper", isCorrect: true },
+                  { id: "C", text: "Sodium", isCorrect: false },
+                  { id: "D", text: "Potassium", isCorrect: false },
+                ],
+              },
+              {
+                id: 4,
+                question: "Thiếu iod trong khẩu phần ăn gây bệnh gì?",
+                hint: "Liên quan đến tuyến giáp",
+                answers: [
+                  { id: "A", text: "Thiếu máu", isCorrect: false },
+                  { id: "B", text: "Còi xương", isCorrect: false },
+                  { id: "C", text: "Bướu cổ", isCorrect: true },
+                  { id: "D", text: "Loãng xương", isCorrect: false },
+                ],
+              },
+              {
+                id: 5,
+                question:
+                  "Khoáng đa lượng được định nghĩa là khoáng có nhu cầu bao nhiêu mỗi ngày?",
+                hint: "Lớn hơn vi lượng",
+                answers: [
+                  { id: "A", text: "< 10 mg/ngày", isCorrect: false },
+                  { id: "B", text: "< 50 mg/ngày", isCorrect: false },
+                  { id: "C", text: "> 100 mg/ngày", isCorrect: true },
+                  { id: "D", text: "> 1 g/ngày", isCorrect: false },
+                ],
+              },
+              {
+                id: 6,
+                question: "Khoáng vi lượng có đặc điểm nào sau đây?",
+                hint: "Hàm lượng rất nhỏ trong cơ thể",
+                answers: [
+                  {
+                    id: "A",
+                    text: "Chiếm 80–90% tổng lượng khoáng",
+                    isCorrect: false,
+                  },
+                  { id: "B", text: "Nhu cầu > 100 mg/ngày", isCorrect: false },
+                  {
+                    id: "C",
+                    text: "Tham gia enzyme và hormone",
+                    isCorrect: true,
+                  },
+                  { id: "D", text: "Chỉ có trong xương", isCorrect: false },
+                ],
+              },
+              {
+                id: 7,
+                question: "Chức năng chính của khoáng đa lượng là gì?",
+                hint: "Liên quan đến xương, điện giải",
+                answers: [
+                  { id: "A", text: "Chỉ tạo enzyme", isCorrect: false },
+                  {
+                    id: "B",
+                    text: "Xây dựng xương, dẫn điện, cân bằng dịch",
+                    isCorrect: true,
+                  },
+                  { id: "C", text: "Chỉ chống oxy hóa", isCorrect: false },
+                  { id: "D", text: "Chỉ tham gia hormone", isCorrect: false },
+                ],
+              },
+              {
+                id: 8,
+                question: "Khoáng vi lượng thường tham gia vào vai trò nào?",
+                hint: "Liên quan đến enzyme",
+                answers: [
+                  { id: "A", text: "Nguồn năng lượng", isCorrect: false },
+                  {
+                    id: "B",
+                    text: "Thành phần metalloenzyme",
+                    isCorrect: true,
+                  },
+                  { id: "C", text: "Dự trữ lipid", isCorrect: false },
+                  { id: "D", text: "Chất đệm pH chính", isCorrect: false },
+                ],
+              },
+              {
+                id: 9,
+                question: "Yếu tố nào làm giảm hấp thu khoáng?",
+                hint: "Có trong thực phẩm giàu xơ",
+                answers: [
+                  { id: "A", text: "Vitamin C", isCorrect: false },
+                  { id: "B", text: "Acid phytic và oxalic", isCorrect: true },
+                  { id: "C", text: "Acid amin", isCorrect: false },
+                  { id: "D", text: "Carbohydrate", isCorrect: false },
+                ],
+              },
+              {
+                id: 10,
+                question: "Vitamin nào giúp tăng hấp thu sắt (Fe)?",
+                hint: "Vitamin tan trong nước",
+                answers: [
+                  { id: "A", text: "Vitamin A", isCorrect: false },
+                  { id: "B", text: "Vitamin D", isCorrect: false },
+                  { id: "C", text: "Vitamin C", isCorrect: true },
+                  { id: "D", text: "Vitamin K", isCorrect: false },
+                ],
+              },
+              {
+                id: 11,
+                question: "Khoáng nào chiếm tỉ lệ lớn nhất trong cơ thể người?",
+                hint: "Liên quan đến xương",
+                answers: [
+                  { id: "A", text: "Phosphor", isCorrect: false },
+                  { id: "B", text: "Calcium", isCorrect: true },
+                  { id: "C", text: "Potassium", isCorrect: false },
+                  { id: "D", text: "Sodium", isCorrect: false },
+                ],
+              },
+              {
+                id: 12,
+                question:
+                  "Khoảng bao nhiêu phần trăm calcium nằm ở xương và răng?",
+                hint: "Gần như toàn bộ",
+                answers: [
+                  { id: "A", text: "70%", isCorrect: false },
+                  { id: "B", text: "80%", isCorrect: false },
+                  { id: "C", text: "90%", isCorrect: false },
+                  { id: "D", text: "99%", isCorrect: true },
+                ],
+              },
+              {
+                id: 13,
+                question: "Thừa calcium có thể gây tác hại nào?",
+                hint: "Liên quan đến thận",
+                answers: [
+                  { id: "A", text: "Thiếu máu", isCorrect: false },
+                  { id: "B", text: "Sỏi thận và vôi hóa mô", isCorrect: true },
+                  { id: "C", text: "Hạ huyết áp", isCorrect: false },
+                  { id: "D", text: "Còi xương", isCorrect: false },
+                ],
+              },
+              {
+                id: 14,
+                question: "Phosphor đứng thứ mấy về hàm lượng trong cơ thể?",
+                hint: "Sau calcium",
+                answers: [
+                  { id: "A", text: "Thứ nhất", isCorrect: false },
+                  { id: "B", text: "Thứ hai", isCorrect: true },
+                  { id: "C", text: "Thứ ba", isCorrect: false },
+                  { id: "D", text: "Thứ tư", isCorrect: false },
+                ],
+              },
+              {
+                id: 15,
+                question: "Dạng phosphat nào mới được hấp thu trong cơ thể?",
+                hint: "Dạng đơn giản nhất",
+                answers: [
+                  { id: "A", text: "Polyphosphate", isCorrect: false },
+                  { id: "B", text: "Orthophosphate", isCorrect: true },
+                  { id: "C", text: "Phosphate hữu cơ", isCorrect: false },
+                  { id: "D", text: "Phosphate phức", isCorrect: false },
+                ],
+              },
+              {
+                id: 16,
+                question: "Khoáng nào là cation nội bào chính?",
+                hint: "Đối lập với Na⁺",
+                answers: [
+                  { id: "A", text: "Sodium", isCorrect: false },
+                  { id: "B", text: "Potassium", isCorrect: true },
+                  { id: "C", text: "Calcium", isCorrect: false },
+                  { id: "D", text: "Magnesium", isCorrect: false },
+                ],
+              },
+              {
+                id: 17,
+                question:
+                  "Thiếu potassium ảnh hưởng nghiêm trọng nhất đến cơ quan nào?",
+                hint: "Cơ quan co bóp liên tục",
+                answers: [
+                  { id: "A", text: "Gan", isCorrect: false },
+                  { id: "B", text: "Phổi", isCorrect: false },
+                  { id: "C", text: "Tim", isCorrect: true },
+                  { id: "D", text: "Dạ dày", isCorrect: false },
+                ],
+              },
+              {
+                id: 18,
+                question:
+                  "Khoáng nào tham gia mạnh vào hoạt động enzyme cùng phosphor?",
+                hint: "Có nhiều trong rau xanh",
+                answers: [
+                  { id: "A", text: "Magnesium", isCorrect: true },
+                  { id: "B", text: "Sodium", isCorrect: false },
+                  { id: "C", text: "Chloride", isCorrect: false },
+                  { id: "D", text: "Iron", isCorrect: false },
+                ],
+              },
+              {
+                id: 19,
+                question: "Thừa magnesium dễ gây độc trong trường hợp nào?",
+                hint: "Liên quan đến bài tiết",
+                answers: [
+                  { id: "A", text: "Bệnh gan", isCorrect: false },
+                  { id: "B", text: "Bệnh thận", isCorrect: true },
+                  { id: "C", text: "Thiếu ngủ", isCorrect: false },
+                  { id: "D", text: "Thiếu vitamin C", isCorrect: false },
+                ],
+              },
+              {
+                id: 20,
+                question: "Nguồn sodium lớn nhất trong khẩu phần ăn là gì?",
+                hint: "Gia vị phổ biến nhất",
+                answers: [
+                  { id: "A", text: "Rau tươi", isCorrect: false },
+                  { id: "B", text: "Muối ăn (NaCl)", isCorrect: true },
+                  { id: "C", text: "Sữa", isCorrect: false },
+                  { id: "D", text: "Trái cây", isCorrect: false },
+                ],
+              },
+              {
+                id: 21,
+                question: "Thừa sodium có thể gây hậu quả nào?",
+                hint: "Liên quan đến huyết áp",
+                answers: [
+                  { id: "A", text: "Hạ đường huyết", isCorrect: false },
+                  { id: "B", text: "Tăng huyết áp và phù", isCorrect: true },
+                  { id: "C", text: "Thiếu máu", isCorrect: false },
+                  { id: "D", text: "Loãng xương", isCorrect: false },
+                ],
+              },
+              {
+                id: 22,
+                question:
+                  "Khoảng bao nhiêu phần trăm sắt trong cơ thể nằm trong hemoglobin?",
+                hint: "Phần lớn sắt dùng để vận chuyển oxy",
+                answers: [
+                  { id: "A", text: "30%", isCorrect: false },
+                  { id: "B", text: "50%", isCorrect: false },
+                  { id: "C", text: "70%", isCorrect: true },
+                  { id: "D", text: "90%", isCorrect: false },
+                ],
+              },
+              {
+                id: 23,
+                question: "Dạng dự trữ sắt chính trong gan là gì?",
+                hint: "Protein dự trữ",
+                answers: [
+                  { id: "A", text: "Hemoglobin", isCorrect: false },
+                  { id: "B", text: "Myoglobin", isCorrect: false },
+                  { id: "C", text: "Ferritin và hemosiderin", isCorrect: true },
+                  { id: "D", text: "Cytochrome", isCorrect: false },
+                ],
+              },
+              {
+                id: 24,
+                question: "Khoáng nào tập trung chủ yếu ở tuyến giáp?",
+                hint: "Liên quan hormone T3, T4",
+                answers: [
+                  { id: "A", text: "Iron", isCorrect: false },
+                  { id: "B", text: "Iodine", isCorrect: true },
+                  { id: "C", text: "Zinc", isCorrect: false },
+                  { id: "D", text: "Copper", isCorrect: false },
+                ],
+              },
+              {
+                id: 25,
+                question:
+                  "Ion kim loại nào làm mất màu xanh của chlorophyll khi chế biến rau?",
+                hint: "Thay thế Mg trong chlorophyll",
+                answers: [
+                  { id: "A", text: "Copper", isCorrect: false },
+                  { id: "B", text: "Iron", isCorrect: true },
+                  { id: "C", text: "Calcium", isCorrect: false },
+                  { id: "D", text: "Potassium", isCorrect: false },
+                ],
+              },
+            ],
           },
         ];
   });
@@ -1371,7 +2058,7 @@ const QuizManager = () => {
     if (unanswered) {
       if (
         !window.confirm(
-          "Bạn chưa trả lời hết các câu hỏi. Bạn có muốn nộp bài không?"
+          "Bé iu chưa trả lời hết các câu hỏi. Bé iu có muốn nộp bài hok?"
         )
       ) {
         return;
@@ -2118,6 +2805,9 @@ const QuizManager = () => {
         .btn-primary {
           background: #667eea;
           color: white;
+          display:flex;
+          align-items: center;
+          
         }
 
         .btn-primary:hover {
