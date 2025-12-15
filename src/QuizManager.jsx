@@ -29,6 +29,378 @@ const QuizManager = () => {
             questions: [
               {
                 id: 1,
+                question:
+                  "Vai trò quan trọng nhất của nước trong cơ thể sinh vật là gì?",
+                hint: "Liên quan đến trao đổi chất và phản ứng sinh hóa.",
+                answers: [
+                  {
+                    id: "A",
+                    text: "Cung cấp năng lượng trực tiếp cho tế bào.",
+                    isCorrect: false,
+                  },
+                  {
+                    id: "B",
+                    text: "Là môi trường khuếch tán và phản ứng.",
+                    isCorrect: true,
+                  },
+                  {
+                    id: "C",
+                    text: "Chỉ tham gia cấu tạo mô cứng.",
+                    isCorrect: false,
+                  },
+                  {
+                    id: "D",
+                    text: "Chỉ giúp điều hòa thân nhiệt.",
+                    isCorrect: false,
+                  },
+                ],
+              },
+              {
+                id: 2,
+                question: "Nước tham gia vào quá trình nào ở thực vật?",
+                hint: "Quá trình tạo chất hữu cơ.",
+                answers: [
+                  { id: "A", text: "Hô hấp hiếu khí.", isCorrect: false },
+                  { id: "B", text: "Quang hợp.", isCorrect: true },
+                  { id: "C", text: "Lên men.", isCorrect: false },
+                  { id: "D", text: "Oxy hóa lipid.", isCorrect: false },
+                ],
+              },
+              {
+                id: 3,
+                question: "Công thức phân tử của nước là gì?",
+                hint: "Gồm hydro và oxy.",
+                answers: [
+                  { id: "A", text: "H₂O", isCorrect: true },
+                  { id: "B", text: "HO₂", isCorrect: false },
+                  { id: "C", text: "H₂O₂", isCorrect: false },
+                  { id: "D", text: "OH₂", isCorrect: false },
+                ],
+              },
+              {
+                id: 4,
+                question:
+                  "Liên kết giữa H và O trong phân tử nước là loại liên kết nào?",
+                hint: "Xét trong một phân tử.",
+                answers: [
+                  { id: "A", text: "Liên kết ion.", isCorrect: false },
+                  { id: "B", text: "Liên kết hydro.", isCorrect: false },
+                  { id: "C", text: "Liên kết cộng hóa trị.", isCorrect: true },
+                  { id: "D", text: "Liên kết kim loại.", isCorrect: false },
+                ],
+              },
+              {
+                id: 5,
+                question: "Nước có tính phân cực mạnh do nguyên nhân nào?",
+                hint: "Liên quan đến độ âm điện.",
+                answers: [
+                  { id: "A", text: "Phân tử có dạng thẳng.", isCorrect: false },
+                  {
+                    id: "B",
+                    text: "O có độ âm điện cao hơn H.",
+                    isCorrect: true,
+                  },
+                  { id: "C", text: "Có nhiều nguyên tử.", isCorrect: false },
+                  {
+                    id: "D",
+                    text: "Có khối lượng phân tử nhỏ.",
+                    isCorrect: false,
+                  },
+                ],
+              },
+              {
+                id: 6,
+                question:
+                  "Liên kết hydro giữa các phân tử nước thuộc loại nào?",
+                hint: "Xét độ bền liên kết.",
+                answers: [
+                  { id: "A", text: "Liên kết mạnh.", isCorrect: false },
+                  { id: "B", text: "Liên kết yếu.", isCorrect: true },
+                  { id: "C", text: "Liên kết ion.", isCorrect: false },
+                  { id: "D", text: "Liên kết cộng hóa trị.", isCorrect: false },
+                ],
+              },
+              {
+                id: 7,
+                question:
+                  "Một phân tử nước có thể tạo tối đa bao nhiêu liên kết hydro?",
+                hint: "Xét cấu trúc hình học.",
+                answers: [
+                  { id: "A", text: "2", isCorrect: false },
+                  { id: "B", text: "3", isCorrect: false },
+                  { id: "C", text: "4", isCorrect: true },
+                  { id: "D", text: "5", isCorrect: false },
+                ],
+              },
+              {
+                id: 8,
+                question:
+                  "Yếu tố nào làm giảm số liên kết hydro giữa các phân tử nước?",
+                hint: "Liên quan đến ion.",
+                answers: [
+                  { id: "A", text: "Nhiệt độ thấp.", isCorrect: false },
+                  { id: "B", text: "Chất không phân cực.", isCorrect: false },
+                  { id: "C", text: "Ion Na⁺, Cl⁻.", isCorrect: true },
+                  { id: "D", text: "Áp suất thấp.", isCorrect: false },
+                ],
+              },
+              {
+                id: 9,
+                question: "Tỷ trọng của nước đá so với nước lỏng như thế nào?",
+                hint: "Vì sao băng nổi trên nước?",
+                answers: [
+                  { id: "A", text: "Lớn hơn.", isCorrect: false },
+                  { id: "B", text: "Bằng nhau.", isCorrect: false },
+                  { id: "C", text: "Nhỏ hơn.", isCorrect: true },
+                  { id: "D", text: "Không xác định.", isCorrect: false },
+                ],
+              },
+              {
+                id: 10,
+                question:
+                  "Nguyên nhân chính khiến nước có khả năng hòa tan nhiều chất?",
+                hint: "Liên quan đến cấu trúc phân tử.",
+                answers: [
+                  {
+                    id: "A",
+                    text: "Khối lượng phân tử nhỏ.",
+                    isCorrect: false,
+                  },
+                  { id: "B", text: "Độ phân cực cao.", isCorrect: true },
+                  { id: "C", text: "Không màu.", isCorrect: false },
+                  { id: "D", text: "Không mùi.", isCorrect: false },
+                ],
+              },
+
+              {
+                id: 11,
+                question: "Loại nước nào chiếm tỷ lệ lớn nhất trong thực phẩm?",
+                hint: "Xét mức độ liên kết.",
+                answers: [
+                  { id: "A", text: "Nước liên kết hóa học.", isCorrect: false },
+                  { id: "B", text: "Nước hấp phụ.", isCorrect: false },
+                  { id: "C", text: "Nước thẩm thấu.", isCorrect: false },
+                  { id: "D", text: "Nước tự do.", isCorrect: true },
+                ],
+              },
+              {
+                id: 12,
+                question: "Hoạt độ nước (aw) phản ánh yếu tố nào?",
+                hint: "Không phải hàm lượng nước.",
+                answers: [
+                  { id: "A", text: "Tổng lượng nước.", isCorrect: false },
+                  {
+                    id: "B",
+                    text: "Khả năng nước tham gia phản ứng.",
+                    isCorrect: true,
+                  },
+                  { id: "C", text: "Khối lượng riêng.", isCorrect: false },
+                  { id: "D", text: "Nhiệt dung.", isCorrect: false },
+                ],
+              },
+              {
+                id: 13,
+                question: "Giá trị aw của nước tinh khiết là bao nhiêu?",
+                hint: "Giá trị chuẩn.",
+                answers: [
+                  { id: "A", text: "0,5", isCorrect: false },
+                  { id: "B", text: "0,8", isCorrect: false },
+                  { id: "C", text: "1", isCorrect: true },
+                  { id: "D", text: "0,99", isCorrect: false },
+                ],
+              },
+              {
+                id: 14,
+                question:
+                  "Nấm mốc bắt đầu phát triển ở aw tối thiểu khoảng bao nhiêu?",
+                hint: "Thấp hơn vi khuẩn.",
+                answers: [
+                  { id: "A", text: "0,3", isCorrect: false },
+                  { id: "B", text: "0,5", isCorrect: false },
+                  { id: "C", text: "0,65–0,8", isCorrect: true },
+                  { id: "D", text: "0,95", isCorrect: false },
+                ],
+              },
+              {
+                id: 15,
+                question: "Vi khuẩn thường phát triển mạnh khi aw lớn hơn?",
+                hint: "So sánh với nấm men.",
+                answers: [
+                  { id: "A", text: "0,6", isCorrect: false },
+                  { id: "B", text: "0,75", isCorrect: false },
+                  { id: "C", text: "0,91", isCorrect: true },
+                  { id: "D", text: "0,5", isCorrect: false },
+                ],
+              },
+              {
+                id: 16,
+                question: "Vùng aw nào làm tốc độ oxy hóa lipid thấp nhất?",
+                hint: "Có lớp nước đơn phân.",
+                answers: [
+                  { id: "A", text: "0,05–0,1", isCorrect: false },
+                  { id: "B", text: "0,3–0,4", isCorrect: true },
+                  { id: "C", text: "0,7–0,8", isCorrect: false },
+                  { id: "D", text: ">0,9", isCorrect: false },
+                ],
+              },
+              {
+                id: 17,
+                question:
+                  "Phản ứng sẫm màu phi enzyme xảy ra mạnh nhất ở aw khoảng?",
+                hint: "Nồng độ chất hòa tan cực đại.",
+                answers: [
+                  { id: "A", text: "<0,3", isCorrect: false },
+                  { id: "B", text: "0,3–0,5", isCorrect: false },
+                  { id: "C", text: "≈0,75", isCorrect: true },
+                  { id: "D", text: ">0,9", isCorrect: false },
+                ],
+              },
+              {
+                id: 18,
+                question: "Enzyme trong thực phẩm hoạt động tốt khi aw?",
+                hint: "Cần nước tự do.",
+                answers: [
+                  { id: "A", text: "<0,3", isCorrect: false },
+                  { id: "B", text: ">0,45", isCorrect: true },
+                  { id: "C", text: "=0,2", isCorrect: false },
+                  { id: "D", text: "<0,1", isCorrect: false },
+                ],
+              },
+              {
+                id: 19,
+                question:
+                  "Đường đẳng nhiệt hấp thụ biểu diễn mối quan hệ giữa?",
+                hint: "Hai đại lượng quan trọng.",
+                answers: [
+                  { id: "A", text: "Nhiệt độ và áp suất.", isCorrect: false },
+                  { id: "B", text: "Độ ẩm và hoạt độ nước.", isCorrect: true },
+                  {
+                    id: "C",
+                    text: "Khối lượng và thể tích.",
+                    isCorrect: false,
+                  },
+                  { id: "D", text: "Thời gian và nhiệt độ.", isCorrect: false },
+                ],
+              },
+              {
+                id: 20,
+                question: "Hiện tượng trễ hấp phụ xảy ra khi nào?",
+                hint: "So sánh hấp thụ và phản hấp thụ.",
+                answers: [
+                  { id: "A", text: "Hai đường trùng nhau.", isCorrect: false },
+                  {
+                    id: "B",
+                    text: "aw nước vào < aw nước ra.",
+                    isCorrect: false,
+                  },
+                  {
+                    id: "C",
+                    text: "Hai đường không trùng nhau.",
+                    isCorrect: true,
+                  },
+                  {
+                    id: "D",
+                    text: "Không liên quan đến sấy.",
+                    isCorrect: false,
+                  },
+                ],
+              },
+              {
+                id: 21,
+                question: "Biện pháp nào giúp giảm hoạt độ nước?",
+                hint: "Hút nước tự do.",
+                answers: [
+                  { id: "A", text: "Bổ sung NaCl.", isCorrect: true },
+                  { id: "B", text: "Giảm áp suất.", isCorrect: false },
+                  { id: "C", text: "Giảm khuấy trộn.", isCorrect: false },
+                  { id: "D", text: "Tăng thể tích.", isCorrect: false },
+                ],
+              },
+              {
+                id: 22,
+                question: "Tinh bột khi gia nhiệt làm giảm aw do?",
+                hint: "Liên quan đến cấu trúc.",
+                answers: [
+                  { id: "A", text: "Bốc hơi nước.", isCorrect: false },
+                  { id: "B", text: "Hồ hóa và trương nở.", isCorrect: true },
+                  { id: "C", text: "Bị phân hủy.", isCorrect: false },
+                  { id: "D", text: "Oxy hóa.", isCorrect: false },
+                ],
+              },
+              {
+                id: 23,
+                question:
+                  "Độ ẩm thấp đặc biệt quan trọng để tạo tính chất nào?",
+                hint: "Ví dụ bánh quy.",
+                answers: [
+                  { id: "A", text: "Độ dẻo.", isCorrect: false },
+                  { id: "B", text: "Độ giòn.", isCorrect: true },
+                  { id: "C", text: "Độ nhớt.", isCorrect: false },
+                  { id: "D", text: "Độ đàn hồi.", isCorrect: false },
+                ],
+              },
+              {
+                id: 24,
+                question: "Vitamin tan trong nước bền hơn khi aw?",
+                hint: "Điều kiện bảo quản.",
+                answers: [
+                  { id: "A", text: "Cao.", isCorrect: false },
+                  { id: "B", text: "Thấp.", isCorrect: true },
+                  { id: "C", text: "Không đổi.", isCorrect: false },
+                  { id: "D", text: "Rất cao.", isCorrect: false },
+                ],
+              },
+              {
+                id: 25,
+                question: "Nước giúp duy trì độ cứng của rau quả tươi nhờ?",
+                hint: "Liên quan áp suất tế bào.",
+                answers: [
+                  { id: "A", text: "Áp suất thẩm thấu.", isCorrect: false },
+                  { id: "B", text: "Áp suất trương.", isCorrect: true },
+                  { id: "C", text: "Áp suất khí.", isCorrect: false },
+                  { id: "D", text: "Áp suất thủy tĩnh.", isCorrect: false },
+                ],
+              },
+              {
+                id: 26,
+                question: "Nước tạo lớp vỏ hydrat quanh protein nhằm?",
+                hint: "Ảnh hưởng tính chất vật lý.",
+                answers: [
+                  { id: "A", text: "Giảm hòa tan.", isCorrect: false },
+                  {
+                    id: "B",
+                    text: "Duy trì độ nhớt và hòa tan.",
+                    isCorrect: true,
+                  },
+                  { id: "C", text: "Phá vỡ protein.", isCorrect: false },
+                  { id: "D", text: "Oxy hóa protein.", isCorrect: false },
+                ],
+              },
+              {
+                id: 27,
+                question: "Nước đóng vai trò gì với tinh bột?",
+                hint: "Xét cấu trúc sản phẩm.",
+                answers: [
+                  { id: "A", text: "Chất oxy hóa.", isCorrect: false },
+                  { id: "B", text: "Chất hóa dẻo.", isCorrect: true },
+                  { id: "C", text: "Chất xúc tác.", isCorrect: false },
+                  { id: "D", text: "Chất bảo quản.", isCorrect: false },
+                ],
+              },
+              {
+                id: 28,
+                question: "Gia công phân phối lại độ ẩm có tác dụng gì?",
+                hint: "Liên quan aw.",
+                answers: [
+                  { id: "A", text: "Tăng aw.", isCorrect: false },
+                  { id: "B", text: "Không ảnh hưởng.", isCorrect: false },
+                  { id: "C", text: "Giảm aw.", isCorrect: true },
+                  { id: "D", text: "Tăng oxy hóa.", isCorrect: false },
+                ],
+              },
+
+              {
+                id: 29,
                 question: "Trong cơ thể sống, nước có vai trò nào sau đây?",
                 hint: "Nước tham gia vào quá trình quang hợp ở thực vật",
                 answers: [
@@ -2147,7 +2519,22 @@ const QuizManager = () => {
               Kết quả: {score.correct}/{score.total} câu đúng
             </h3>
             <p>Điểm: {((score.correct / score.total) * 10).toFixed(2)}</p>
-            <button className="btn-primary" onClick={restartQuiz}>
+            <button
+              className="btn-primary"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: "2px",
+                padding: "5px",
+                color: "#e2e8f0",
+                border: "none",
+                borderRadius: "3px",
+                fontSize: "1rem",
+                background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+              }}
+              onClick={restartQuiz}
+            >
               <RotateCcw size={18} />
               Làm lại
             </button>
