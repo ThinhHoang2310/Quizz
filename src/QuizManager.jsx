@@ -15,6 +15,8 @@ import {
 
 import "./styles.scss";
 
+import Snowfall from "react-snowfall";
+
 const QuizManager = () => {
   // State chapters: đọc từ localStorage nếu có, nếu không dùng mặc định
   const [chapters, setChapters] = useState(() => {
@@ -2629,9 +2631,11 @@ const QuizManager = () => {
   // Render Management Mode
   return (
     <div className="quiz-manager">
+      <Snowfall color="#82C3D9" />
+
       <div className="header">
         <div className="header-content">
-          <h1>Quản lý Câu hỏi Trắc nghiệm</h1>
+          <h1> Quản lý Câu hỏi Trắc nghiệm 🎄⛄🦌⭐ </h1>
           <button className="btn-primary" onClick={addChapter}>
             <Plus size={20} />
             Thêm Chương

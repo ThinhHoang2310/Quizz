@@ -1,5 +1,6 @@
 import QuizManager from "./QuizManager";
 
+
 function App() {
   return <QuizManager />;
 }
